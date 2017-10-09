@@ -1,23 +1,29 @@
-.wrapper {
+/*.wrapper {
   height: 100%;
   width: 100%;
+}*/
+body {
+   position: relative;
 }
 p {
-   align-content: center;
+   text-align: center;
    position: relative;
-   top: 45%;
+   top: 35%;
    margin-left: 10%;
    margin-right: 10%;
    padding-right: 3%;
    padding-left: 3%;
    text-shadow: 1px 0.5px #1f66f4;
-   font-size: 20px;
+   font-size: 180%;
    background-color: grey;
    border-radius: 16px;
    border-width: thin;
    font-family: sans-serif;
 }
-p1 {
-   position: relative;
-   top: 50%;
+button {
+   position: fixed;
+   bottom: 0px;
+   right: 0px;
+   font-size: 250%;
+   border-radius: 30px;
 }

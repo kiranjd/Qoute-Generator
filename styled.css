@@ -24,6 +24,8 @@ button {
    position: fixed;
    bottom: 0px;
    right: 0px;
-   font-size: 250%;
+   font-size: 450%;
    border-radius: 30px;
+   background-color: black;
+   color: white;
 }

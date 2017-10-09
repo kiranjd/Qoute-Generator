@@ -10,6 +10,7 @@ function sample() {
       });
 }
 function change_bg() {
+   //$("p").remove();
    sample();
   var bg1 = ["https://i.stack.imgur.com/yEQ6k.jpg", "https://previews.123rf.com/images/frankrohde/frankrohde1105/frankrohde110500208/9443736-Abstract-grunge-background-pattern-for-your-text-Stock-Photo-texture.jpg", "https://static.pexels.com/photos/547114/pexels-photo-547114.jpeg"];
   var string = bg1[getRandomArbitrary(0, bg1.length)];

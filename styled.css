@@ -2,3 +2,22 @@
   height: 100%;
   width: 100%;
 }
+p {
+   align-content: center;
+   position: relative;
+   top: 45%;
+   margin-left: 10%;
+   margin-right: 10%;
+   padding-right: 3%;
+   padding-left: 3%;
+   text-shadow: 1px 0.5px #1f66f4;
+   font-size: 20px;
+   background-color: grey;
+   border-radius: 16px;
+   border-width: thin;
+   font-family: sans-serif;
+}
+p1 {
+   position: relative;
+   top: 50%;
+}

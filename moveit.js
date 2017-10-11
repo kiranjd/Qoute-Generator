@@ -1,4 +1,12 @@
 var first=true;
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
 function getRandomArbitrary(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
@@ -21,6 +29,8 @@ function change_bg() {
   document.body.style.backgroundPosition = "center center";
 }
 function anim() {
-      $("body").animate({top:"100%"});
-      $("body").animate({top:"0%"});
+      $("body").animate({opacity: 0.0});
+      sample();
+      sleep(500);
+      $("body").animate({opacity: 1.0});
 }

@@ -1,4 +1,5 @@
 var first=true;
+var myVar;
 function sleep(milliseconds) {
   var start = new Date().getTime();
   for (var i = 0; i < 1e7; i++) {
@@ -12,10 +13,12 @@ function getRandomArbitrary(min, max) {
 }
 function sample() {
    first=false;
+
    $(document).ready(function(){
     $("p").remove();
    $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]="+getRandomArbitrary(1,30)+"&callback=", function(a) {
-         $("body").append("<p id=\"para\">" + a[0].content +"</p>"+ "<p >&mdash;" + a[0].title +  "</p>")
+ myVar = "<p id=\"para\">" + a[0].content +"</p>"+ "<p >&mdash;" + a[0].title +  "</p>"
+$(".text").append("<p>"+myVar+"</p>")
          });
       });
 }
@@ -33,4 +36,9 @@ function anim() {
       sample();
       sleep(500);
       $("body").animate({opacity: 1.0});
+      tweet();
+}
+function tweet() {
+   var tweetURL = 'https://twitter.com/home?status=' +encodeURIComponent(myVar);//.substring(0,140));
+   window.open(tweetURL);
 }

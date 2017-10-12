@@ -1,13 +1,16 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
-</script>
-<script src="moveit.js"></script>
+
 
 <html>
 <head>
   <title>Quotes</title>
   <link rel="stylesheet" type="text/css" href="styled.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+  </script>
+  <script src="moveit.js"></script>
 </head>
 <body onload="change_bg()" class="wrapper">
-   <button id="b1" onclick="anim();" value="Next Quote">Next Quote</button>
+   <button id="b1" onclick="anim();tweet();" value="Next Quote">Next Quote</button>
+   <div class="text"></div>
+   <a class="button" id="tweet-quote" title="Tweet this quote!" target="_blank">
 </body>
 </html>
